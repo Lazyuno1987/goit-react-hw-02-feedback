@@ -7,6 +7,12 @@ display: flex;
 
 export const ItemStat = styled.li`
 margin-right: 10px;
-border: 2px solid red;
-`
 
+box-shadow: 0px 3px 18px 2px rgba(54, 2, 46, 0.66);
+min-width: 100px ;
+text-align: center;
+padding: 5px 5px;
+`
+export const Title = styled.h1`
+margin-left: 40px;
+`
