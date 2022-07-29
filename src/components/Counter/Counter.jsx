@@ -4,6 +4,7 @@ import { Statistics } from '../Statistics/Statistics';
 import { Section } from '../Section/Section';
 import { Notification } from "components/Notification/Notification";
 
+
 class Counter extends React.Component{
 state = {
   good: 0,
@@ -43,13 +44,14 @@ state = {
                     onLeaveFeedback={this.onLeaveFeedback}
                     />
                 </Section>
-                {this.countTotalFeedback() > 0 ? (<Statistics title='Statistics'
+                <Section title="Statistics">
+                {this.countTotalFeedback() > 0 ? (<Statistics
                     good={this.state.good}
                     neutral={this.state.neutral}
                     bad={this.state.bad}
                     total={this.countTotalFeedback()}
                     positivePercentage={this.countPositiveFeedbackPercentage()}/>)  : (<Notification message= 'There is no feedback'/>) }
-               
+               </Section>
                 
                
             </>

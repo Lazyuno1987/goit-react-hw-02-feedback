@@ -13,6 +13,4 @@ min-width: 100px ;
 text-align: center;
 padding: 5px 5px;
 `
-export const Title = styled.h1`
-margin-left: 40px;
-`
+
