@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 
 export const FeedbackOptions = ({ option, onLeaveFeedback }) => {
+ 
   return (
     <List>
-      {Object.entries(option).map(el => {
+      {option.map(el => {
         return (
           <Item key={nanoid()}>
-            <Button type="button" onClick={() => onLeaveFeedback(el[0])}>
-              {el[0]}
+            <Button type="button" onClick={() => onLeaveFeedback(el)}>
+              {el}
             </Button>
           </Item>
         );
@@ -19,6 +20,6 @@ export const FeedbackOptions = ({ option, onLeaveFeedback }) => {
 };
 
 FeedbackOptions.propTypes = {
-  option: PropTypes.object.isRequired,
+  option: PropTypes.array.isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };

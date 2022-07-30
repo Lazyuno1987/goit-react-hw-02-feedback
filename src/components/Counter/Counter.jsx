@@ -37,7 +37,7 @@ class Counter extends React.Component {
       <>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            option={this.state}
+            option={Object.keys(this.state)}
             onLeaveFeedback={this.onLeaveFeedback}
           />
         </Section>

@@ -5,7 +5,7 @@ export const Section = ({ title, children }) => {
   return (
     <>
       <SectionTitle>{title}</SectionTitle>
-      <ul>{children}</ul>
+      {children}
     </>
   );
 };
