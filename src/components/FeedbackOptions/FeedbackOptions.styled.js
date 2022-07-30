@@ -10,7 +10,6 @@ export const Item = styled.li`
 box-shadow: 0px 3px 18px 2px rgba(54, 2, 46, 0.66);
 margin-right: 30px;
 outline: none;
-padding: 10px;
 border: inherit;
 
 
@@ -21,5 +20,6 @@ outline: none;
 border: inherit;
 cursor: pointer;
 background-color: inherit;
+padding: 10px;
 
 `
